@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+        <meta name="robots" content="noindex nofollow" />
+        <meta name="color-scheme" content="light dark" />
+        
+        <title>Soppy</title>
+
+        <meta property="og:title" content="Soppy" />
+        <meta property="og:description" content="jan Sopi" />
+        <meta property="og:url" content="https://jan.soppy-fia.net/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="soppy-fia.net" />
+
+        <link rel="stylesheet" href="fonts/ComicNeue/font.css" defer />
+
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+
+                max-width: 100vw;
+                min-height: 100vh;
+
+                font-family: 'Comic Neue';
+                font-size: 1.5em;
+            }
+
+            header, main, footer {
+                margin-left: 2rem;
+                width: min(400px, 100vw);
+            }
+
+            p, ul, ol {
+                margin: 0;
+                padding: 0;
+            }
+
+            ul, ol {
+                list-style-type: none;
+            }
+
+            a:has(>img) {
+                display: flex;
+            }
+
+            #entrapta {
+                position: fixed;
+                
+                width: auto;
+                height: 40vh;
+
+                right: 0;
+                bottom: 0;
+
+                user-select: none;
+                pointer-events: none;
+
+                z-index: -1;
+            }
+
+            @media (max-width: 600px) {
+                #entrapta {
+                    display: none;
+                }
+            }
+
+            .xlarge { font-size: 2em; }
+            .large { font-size: 1.5em; }
+            .bold { font-weight: bold; }
+
+            .flex { display: flex; }
+            .flex.column { flex-direction: column; }
+            .flex.row { flex-direction: row; }
+
+            .flex.column.left { align-items: flex-start; }
+            .flex.column.middle { align-items: center; }
+            .flex.column.right { align-items: flex-end; }
+            .flex.column.top { justify-content: flex-start; }
+            .flex.column.center { justify-content: center; }
+            .flex.column.bottom { justify-content: flex-end; }
+
+            .flex.row.left { justify-content: flex-start; }
+            .flex.row.middle { justify-content: center; }
+            .flex.row.right { justify-content: flex-end; }
+            .flex.row.top { align-items: flex-start; }
+            .flex.row.center { align-items: center; }
+            .flex.row.bottom { align-items: flex-end; }
+
+            .gap-15 { gap: 1.5rem; }
+            .gap-10 { gap: 1rem; }
+            .gap-05 { gap: 0.6rem; }
+        </style>
+    </head>
+    <body class="flex column left gap-15">
+        <header class="flex column" style="margin-top:2rem;">
+            <span class="xlarge bold">Soppy</span>
+            <span>they/them</span>
+        </header>
+        <main class="flex column gap-05">
+            <p class="large">My socials</p>
+            <ul class="flex column">
+                <li class="flex gap-05">
+                    <span>Stoat</span>
+                    <a href="https://stoat.chat/">soppy_fia#2599</a>
+                </li>
+                <li class="flex gap-05">
+                    <span>Discord</span>
+                    <a href="https://discord.com/">soppy_fia</a>
+                </li>
+                <li class="flex gap-05">
+                    <span>TikTok</span>
+                    <a href="https://www.tiktok.com/@soppy_fia">@soppy_fia</a>
+                </li>
+                <li class="flex gap-05">
+                    <span>GitHub</span>
+                    <a href="https://github.com/soppy-fia">soppy-fia</a>
+                </li>
+                <li class="flex gap-05">
+                    <span>Steam</span>
+                    <a href="https://steamcommunity.com/id/soppy_fia/">soppy_fia</a>
+                </li>
+            </ul>
+            <p class="large">About me</p>
+            <p>
+                I am a Marxist, Linux user, and AV systems programmer.
+                I have a homelab where I learn networking and server administration.
+                I'm also learning the accordion but I rarely make time for it.
+                I think pedagogy is interesting.
+                My favourite character is Entrapta from She-Ra and the Princesses of Power.
+            </p>
+        </main>
+        <img id="entrapta" src="entrapta.png" width="1791" height="1422" alt="Entrapta">
+    </body>
+</html>

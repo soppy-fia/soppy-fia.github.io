@@ -1,0 +1,16 @@
+@layer reset, constants, layout, font, palette, style;
+
+@import url('reset.css') layer(reset);
+@import url('fonts/import.css') layer(font);
+
+@layer constants {}
+
+@layer palette {}
+
+@layer layout {}
+
+@layer style {
+    body {
+        background-image: url(assets/tile.gif);
+    }
+}
